@@ -1,10 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        Personagem heroi1 = new Personagem("Arthus", "Guerreiro", 1, 100, 10.5);
+        // Instanciação dos personagens
+        Personagem luke = new Personagem("Luke", "Arqueiro", 52, 150, 57.5);
+        Personagem dory = new Personagem("Dory", "Mago", 92, 90, 89);
 
-        .
-        .
-        .
-
+        // Exibição dos status dos personagens
+        luke.exibirStatus();
+        dory.exibirStatus();
     }
 }

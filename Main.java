@@ -1,11 +1,22 @@
 public class Main {
     public static void main(String[] args) {
         // Instanciação dos personagens
-        Personagem luke = new Personagem("Luke", "Arqueiro", 52, 150, 57.5);
-        Personagem dory = new Personagem("Dory", "Mago", 92, 90, 89);
+        Mago luke = new Mago("Luke", "Mago", 100, 250, 127.5, 540);
+        Guerreiro thorin = new Guerreiro("Thorin", "Guerreiro", 78, 590, 115, 340);
 
-        // Exibição dos status dos personagens
         luke.exibirStatus();
-        dory.exibirStatus();
+        luke.usarHabilidadeEspecial();
+
+        thorin.exibirStatus();
+        thorin.usarHabilidadeEspecial();
+
+        Personagem[] personagens = new Personagem[2];
+        personagens[0] = new Mago("Drake","Mago", 59, 350, 98, 260);
+        personagens[1] = new Guerreiro("Garen", "Guerreiro", 86, 380, 99, 280);
+
+        for (Personagem p : personagens) {
+            p.exibirStatus();
+            p.usarHabilidadeEspecial();
+        }
     }
 }

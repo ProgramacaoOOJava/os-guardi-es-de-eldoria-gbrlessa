@@ -12,7 +12,8 @@ public class Mago extends Personagem {
         System.out.println("Inteligência: " + inteligencia);
     }
 
+    @Override
     public void usarHabilidadeEspecial() {
-        System.out.println("\nMago " + nome + " lança Bola de fogo!!!");
+        System.out.println("\nMago " + getNome() + " lança Bola de fogo!!!");
     }
 }
